@@ -1,0 +1,62 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="icon" href="images/favicon-32x32.png">
+    <title>Tarjeta</title>
+</head>
+<body>
+    <div class="tarjeta-conteiner">
+        <div class="tarjeta adelante">
+            <img src="images/card-logo.svg" class="logo">
+            <p class="numeros">0000 0000 0000 0000</p>
+            <div class="dueño-conteiner">
+                <p class="dueño">JANE APPLESEED</p>
+                <p class="vencimiento">00/00</p>
+            </div>
+        </div>
+        <div class="tarjeta atras">
+            <p class="cvcAtras">000</p>
+        </div>
+    </div>
+    <div class="datos-conteiner">
+        <form class="form">
+            <div class="form__user-conteiner">
+                <div class="input-conteiner">
+                    <label for="name">CARDHOLDER NAME</label>
+                    <input type="text" id="name" placeholder="e.g. Jane Appleseed">
+                    <p class="blank advNombre">Can't be blank</p>
+                </div>
+                <div class="input-conteiner">
+                    <label for="cardNum">CARD NUMBER</label>
+                    <input type="text" id="cardNum" placeholder="e.g. 1234 5678 9123 0000" maxlength="19">
+                    <p class="blank advTarjeta">Wrong format,numbers only</p>
+                </div>
+            </div>
+            <div class="form__date-conteiner">
+                <div class="date-conteiner">
+                    <label>EXP. DATE(MM/YY)</label>
+                    <div class="fecha-conteiner">
+                        <input type="number" id="month" placeholder="MM" min="1" max="12">
+                        <input type="number" id="year" placeholder="YY" min="26" max="40">
+                    </div>
+                    <p class="blank advDate">Can't be blank</p>
+                </div>
+                <div class="cvc-conteiner">
+                    <label for="cvc">CVC</label>
+                    <input type="number" id="cvc" placeholder="e.g. 123" max="999" min="100">
+                    <p class="blank advCvc">Can't be blank</p>
+                </div>
+            </div>
+            <input type="submit" value="Confirm" class="submit">
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
