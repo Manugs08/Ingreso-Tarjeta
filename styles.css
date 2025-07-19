@@ -208,7 +208,7 @@ body,div,p,h1,h2,input,span,button,img{
         align-items: start;
     }
     .form{
-        min-width: 50%
+        min-width: 60%
     }
 }
 @media(max-width:390px){
